@@ -1,16 +1,16 @@
-public void setup()
-{
-  size(500, 500);  
-  background(255);
-  noLoop();
+public Cluster mainCluster;
+void setup(){
+  size(700,700);
 }
 
-public void draw()
-{
-  background(255);
-  Cluster c = new Cluster(50, 250, 250); // initial number of segments in the tendril and starting (x,y) coordinate
+public int n = 0;
+public int time = 100;
+
+void draw(){
+  background(0);
+  stroke(255);
+  mainCluster = new Cluster(50,350,350);
 }
-public void mousePressed()
-{
-  redraw();
+public int rand(int min, int max){
+  return min + (int)(Math.random()*(1+(max-min)));
 }
