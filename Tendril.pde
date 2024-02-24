@@ -1,9 +1,8 @@
-class Tendril
-{
+public class Tendril{
   private int myNumSegments, myX, myY;
   private double myAngle;
   private float[] randAngles;
- 
+  private int SEG_LENGTH = 5;
   public Tendril(int len, double theta, int x, int y){
     myNumSegments = len;
     myAngle = theta;
@@ -31,4 +30,4 @@ class Tendril
     }
   }
 }
-}
+
